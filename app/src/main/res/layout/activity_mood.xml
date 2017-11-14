@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_mood"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.dk.mytest.ui.activity.MoodActivity">
+    <com.example.dk.mytest.view.TitleView
+        android:id="@+id/mood_title"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="48dp"/>
+    <GridView
+        android:id="@+id/send_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:numColumns="4"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:horizontalSpacing="7dp"
+        android:verticalSpacing="7dp"
+        android:background="@color/white"
+        />
+    <EditText
+        android:id="@+id/add_content_send"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/send_add"
+        android:layout_below="@id/mood_title"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:gravity="top|left"
+        android:maxLength="256"
+        android:hint="@string/send_hint"
+        android:textColorHint="@color/hint_text"
+        android:textSize="15sp" />
+</RelativeLayout>

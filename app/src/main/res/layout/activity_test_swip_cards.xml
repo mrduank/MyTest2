@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_test_swip_cards"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.example.dk.mytest.ui.activity.TestSwipeCardsActivity">
+<com.example.dk.mytest.view.TitleView
+    android:layout_width="match_parent"
+    android:layout_height="60dp"/>
+    <Button
+        android:text="SimpleSwipeCards"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clickToSwipeCards"/>
+    <Button
+        android:text="SimpleSwipeCards"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clickToAnimation"/>
+    <com.example.dk.mytest.customprogress.CustomProgress
+        android:background="@color/background_common"
+        android:id="@+id/custom_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        />
+</LinearLayout>

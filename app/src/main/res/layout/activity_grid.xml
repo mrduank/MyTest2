@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_grid"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.dk.mytest.ui.activity.GridActivity">
+    <com.example.dk.mytest.view.TitleView
+        android:id="@+id/grid_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/grid_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.example.dk.mytest.lib.MultiColumnListView
+            xmlns:pla="http://schemas.android.com/apk/res-auto"
+            android:background="@color/white"
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            pla:plaColumnNumber="2"
+            pla:plaLandscapeColumnNumber="2"
+            />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

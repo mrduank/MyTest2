@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="bg_top">#770000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="background_common">#1a1a1a</color>
+    <color name="shadow">#393939</color>
+    <color name="forget">#888888</color>
+    <color name="text_choose_true">#eeeeee</color>
+    <color name="text_choose_false">#999999</color>
+    <color name="tip">#bbbbbb</color>
+    <color name="video_tag_line">#525252</color>
+    <color name="contents_text">#ff000000</color>
+    <color name="page_color">#f3f3f3</color>
+    <color name="text_hint_color">#999999</color>
+    <color name="Indigo_colorPrimaryDark">#303f9f</color>
+    <color name="Indigo_colorPrimary">#3f51b5</color>
+    <color name="Indigo_nav_color">#4675FF</color>
+    <color name="hint_text">#c5c5c5</color>
+    <color name="gray_black">#cdcdcd</color>
+    <color name="text_color">#333333</color>
+    <color name="text_color_gray">#666666</color>
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="background_white">#ececec</color>
+    <color name="like_color">#838383</color>
+</resources>

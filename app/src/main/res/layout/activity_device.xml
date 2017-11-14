@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_device"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_common"
+    tools:context="com.example.dk.mytest.ui.activity.DeviceActivity">
+    <com.example.dk.mytest.view.TitleView
+        android:id="@+id/device_title"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@color/video_tag_line"
+        />
+    <com.example.dk.mytest.view.SlideListView
+        android:id="@+id/slide_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@android:color/transparent"
+        android:overScrollMode="never"
+        />
+
+</LinearLayout>

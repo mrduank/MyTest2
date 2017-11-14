@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_we_chat_about"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.dk.mytest.ui.activity.WeChatAboutActivity">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="微信分享"
+        android:onClick="WeChatShare"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="微信shareSdk登录"
+        android:onClick="shareSdkLogin"
+        android:textAllCaps="false"
+        />
+    <Button
+        android:id="@+id/showShare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="微信shareSdk分享"
+        android:textAllCaps="false"
+        />
+
+</LinearLayout>

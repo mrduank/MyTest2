@@ -1,0 +1,65 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dk.mytest.ui.fragment.SecondFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_view"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="bottom"
+    >
+    <View
+        android:layout_above="@+id/select_lay"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+
+        android:background="@color/video_tag_line"
+        />
+    <LinearLayout
+        android:id="@+id/select_lay"
+        android:layout_width="match_parent"
+        android:background="@color/shadow"
+        android:layout_gravity="bottom"
+        android:layout_height="40dp">
+        <TextView
+            android:id="@+id/add_item"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="添加"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/tip"
+            />
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            android:background="@color/video_tag_line"
+            />
+        <TextView
+            android:id="@+id/del_item"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="删除"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/tip"
+            />
+
+    </LinearLayout>
+</LinearLayout>
+
+
+</FrameLayout>

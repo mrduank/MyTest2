@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">DKMyTest</string>
+    <string name="welcome">Welcome</string>
+    <string name="account">请输入邮箱账号</string>
+    <string name="password">请输入密码</string>
+    <string name="login">登录</string>
+    <string name="forget">忘记密码</string>
+    <string name="register">新用户注册</string>
+    <string name="equipment">发现%d台设备</string>
+    <string name="internet_load">网络加载图片</string>
+    <string name="save">保存图片</string>
+    <string name="cancel">取消</string>
+    <string name="open">打开</string>
+    <string name="close">关闭</string>
+    <string name="news">新鲜事</string>
+    <string name="mood">无聊图</string>
+    <string name="local_florist">妹子图</string>
+    <string name="move">小电影</string>
+    <string name="setting">设置</string>
+    <string name="photo">拍照</string>
+    <string name="album">相册</string>
+    <string name="send_hint">发表新鲜事...</string>
+    <string name="send_title_text">发布</string>
+    <string name="send_text">发送</string>
+    <string name="logo">长视</string>
+    <string name="text_collapse">收起全文</string>
+    <string name="text_expand">展开全文</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="160dp"
+    android:background="@drawable/make_sure_dialog_bg"
+    >
+    <TextView
+        android:id="@+id/make_sure_dialog_content"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:text="您确定要登录吗？"
+        android:gravity="center"
+        android:textColor="@color/tip"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/video_tag_line"
+        />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal"
+    >
+    <TextView
+        android:id="@+id/sure_tv"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="确定"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/tip"
+        />
+    <View
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="@color/video_tag_line"
+        />
+    <TextView
+        android:id="@+id/cancel_tv"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="取消"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/tip"
+        />
+
+</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:minHeight="10dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp">
+
+        <com.example.dk.mytest.view.CircleImageView
+            android:id="@+id/msg_icon"
+            android:layout_width="36.5dp"
+            android:layout_height="36.5dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ic_launcher" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/msg_icon">
+
+            <TextView
+                android:id="@+id/msg_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLength="23"
+                android:maxLines="1"
+                android:text="用户昵称"
+                android:textColor="@color/text_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/msg_item_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/msg_item_name"
+                android:text="2017.2.22"
+                android:textColor="@color/text_color_gray"
+                android:textSize="13sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <com.example.dk.mytest.view.ExpandableTextView
+        android:id="@+id/expanded_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@id/id_source_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="3dp"
+            android:text="社区说说动态显示地方"
+            android:textColor="@color/viewfinder_frame"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@id/id_expand_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="20dp"
+            />
+    </com.example.dk.mytest.view.ExpandableTextView>
+    <!--<jaydenxiao.com.expandabletextview.ExpandableTextView-->
+        <!--android:id="@+id/expanded_tv"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:animDuration="200"-->
+        <!--android:padding="8dp"-->
+        <!--app:collapseDrawable="@drawable/icon_green_arrow_up"-->
+        <!--app:collapseExpandGrarity="right"-->
+        <!--app:collapseExpandTextColor="@color/main_color"-->
+        <!--app:contentTextColor="@color/gray"-->
+        <!--app:contentTextSize="14sp"-->
+        <!--app:expandDrawable="@drawable/icon_green_arrow_down"-->
+        <!--app:maxCollapsedLines="3"-->
+        <!--app:textCollapse="@string/text_collapse"-->
+        <!--app:textExpand="@string/text_expand"-->
+        <!--/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/msg_item_content_text"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="13dp"-->
+        <!--android:layout_marginRight="13dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:ellipsize="end"-->
+        <!--android:lineSpacingExtra="3dp"-->
+        <!--android:maxLines="2"-->
+        <!--android:text="社区说说动态显示地方"-->
+        <!--android:textColor="@color/viewfinder_frame"-->
+        <!--android:textSize="15sp" />-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="3dp"
+        android:background="@color/background_white" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="34dp">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@color/background_white" />
+
+                <RadioButton
+                    android:id="@+id/comment_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/icon_pinlun"
+                    android:drawablePadding="10dp"
+                    android:text="评论"
+                    android:textColor="@color/like_color"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@color/background_white" />
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RadioButton
+                    android:id="@+id/agree_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/icon_zan"
+                    android:drawablePadding="10dp"
+                    android:text="点赞"
+                    android:textColor="@color/like_color"
+                    android:textSize="15sp" />
+            </FrameLayout>
+        </RadioGroup>
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/background_white" />
+</LinearLayout>
