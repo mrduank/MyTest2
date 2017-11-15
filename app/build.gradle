@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "25.0.3"
+    buildToolsVersion '26.0.2'
     defaultConfig {
         applicationId "com.example.dk.mytest"
         minSdkVersion 16
@@ -10,6 +10,11 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath false
+            }
+        }
     }
     buildTypes {
         release {
@@ -20,6 +25,7 @@ android {
 }
 
 dependencies {
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     compile fileTree(include: ['*.jar'], dir: 'libs')
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
@@ -53,5 +59,9 @@ dependencies {
     compile 'com.jakewharton:butterknife:7.0.1'
     compile 'com.ms-square:expandableTextView:0.1.4'
     compile 'com.jaydenxiao:ExpandableTextView:1.0.0'
+//    compile 'com.github.Todd-Davies:ProgressWheel:1.2'
+    compile 'com.pnikosis:materialish-progress:1.0'
+//    compile 'com.jakewharton:butterknife:7.0.1'
+
     testCompile 'junit:junit:4.12'
 }

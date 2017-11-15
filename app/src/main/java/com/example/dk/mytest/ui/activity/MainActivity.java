@@ -12,8 +12,6 @@ import com.example.dk.mytest.base.BaseActivity;
 
 public class MainActivity extends BaseActivity {
     private TextView textView;
-    // 统一消息处理
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,44 +52,12 @@ public class MainActivity extends BaseActivity {
             MainActivity.this.startActivity(intent);
         }
     };
-
-    public void clickToRecycleView1(View view) {
-        Intent intent = new Intent(this, RecycleActivity.class);
-        startActivity(intent);
-    }
-
-    public void clickToRecycleView2(View view) {
-        Intent intent = new Intent(this, WaterfallActivity.class);
-        startActivity(intent);
-    }
-
-    public void clickToPhoto(View view) {
-        Intent intent = new Intent(this, SampleActivity.class);
-        startActivity(intent);
-    }
-
-    public void clickToInternetPhoto(View view) {
-        Intent intent = new Intent(this, GridActivity.class);
-        startActivity(intent);
-    }
-
-
-    public void clickToTestSwipeCards(View view) {
-        Intent intent = new Intent(this, TestSwipeCardsActivity.class);
-        startActivity(intent);
-    }
-
-    public void clickToDrawLayoutActivity(View view) {
-        Intent intent = new Intent(this, DrawLayoutActivity.class);
-        startActivity(intent);
-    }
-
     public static void start(WelcomeActivity activity) {
         activity.startActivity(new Intent(activity, MainActivity.class));
     }
 
-    public void WeixinShare(View view) {
-        Intent intent=new Intent(this,WeChatAboutActivity.class);
+    public void clickToMain2(View view) {
+        Intent intent = new Intent(this, Main2Activity.class);
         startActivity(intent);
     }
 

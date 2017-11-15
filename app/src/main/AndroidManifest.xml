@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.dk.mytest">
 
     <uses-permission android:name="android.permission.VIBRATE" />
@@ -24,7 +25,8 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
         <provider
             android:name="android.support.v4.content.FileProvider"
             android:authorities="com.example.fileprovider"
@@ -89,7 +91,9 @@
             android:name="Mob-AppSecret"
             android:value="70ac0e792d39cbedaf15f0ff8e285aa1" />
 
-        <activity android:name=".ui.activity.WeChatAboutActivity"></activity>
+        <activity android:name=".ui.activity.WeChatAboutActivity" />
+        <activity android:name=".sweetdialog.SweetDialogActivity" />
+        <activity android:name=".ui.activity.Main2Activity"></activity>
     </application>
 
 </manifest>

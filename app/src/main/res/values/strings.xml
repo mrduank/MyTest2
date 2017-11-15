@@ -25,6 +25,10 @@
     <string name="logo">长视</string>
     <string name="text_collapse">收起全文</string>
     <string name="text_expand">展开全文</string>
+    <string name="dialog_default_title">Here\'s a message!</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="LOADING">Loading...</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
